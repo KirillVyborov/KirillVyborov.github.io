@@ -1,0 +1,411 @@
+body{
+    min-width: 280px;
+    max-width: 1200px;
+    margin: 16px auto;
+    background-color: #0178f788;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+img{max-width:100%;}
+
+a{
+    text-decoration: none;
+}
+
+.brand-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span.brand-copy{
+    text-decoration: underline;
+}
+
+.brand-copy h1{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.brand-copy p{
+    font-size: 14px;
+    margin: 10px;
+}
+
+.menu-toggle{
+  display: none;
+  margin-left: auto;
+  margin-right: 20px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.main-nav{
+    border-top: 1px solid gray;
+    padding: 5px 5px;
+}
+
+.main-nav ul{
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 10px 10px;
+    gap: 15px;
+    list-style: none;
+}
+
+.main-nav a{
+    padding: 2px 10px;
+    border: 1px solid transparent;
+    color: black;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"]{
+    border: 1px solid gray;
+    border-color: lightgray;
+    background: white;
+}
+
+.layout{
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+}
+
+.content-window{
+    align-self: start;
+}
+
+.hero{
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin: 10px;
+}
+
+.hero-title{
+    font-size: 26px;
+    color: #003b7b;
+}
+
+.hero p{
+    font-size: 14px;
+}
+
+.popular{
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+    margin: 10px;
+}
+
+.popular article{
+    width: 30%;
+}
+
+.popular h1{
+    font-size: 18px;
+    text-align: center;
+}
+
+.popular p{
+    font-size: 14px;
+}
+
+.history{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+.list{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+.images-example{
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+.history h1,
+.list h1,
+.images-example h1{
+    font-size: 18px;
+    text-align: left;
+}
+
+.history a,
+.list a,
+.images-example a{
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.popular-title{
+    font-size: 28px;
+    margin: 10px;
+}
+
+.popular-title img{
+    height: 50px;
+    width: auto;
+    display: flex;
+}
+
+.sidebar{
+    text-align: left;
+    align-self: start;
+}
+
+.subcribe-form{
+    padding: 10px;
+}
+.subcribe-form button{
+    width: 80px;
+    height: 20px;
+    padding: 0;
+}
+
+.page-links{
+    padding: 10px;
+    margin: 0;      
+}
+
+.page-links li{
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: left;
+    list-style: none;
+}
+
+.page-links a{
+    color: black;
+}
+
+.sidebar-ad{
+    margin: 10px 0;
+}
+
+.ad{
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.main-text{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 10px;
+}
+
+.main-text h1{
+    font-size: 18px;
+    text-align: left;
+}
+
+.main-text p{
+    font-size: 14px;
+}
+
+.table-window{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+.table-text{
+  width: 100%;
+  min-width: 640px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border: 1px solid #7f9db9;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, .15);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.table-text th{
+  padding: 5px 10px;
+  text-align: left;
+  font-weight: bold;
+  color: #1a1a1a;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f2e8 50%, #e0ddca 100%);
+  border-right: 1px solid #aca899;
+  border-bottom: 1px solid #aca899;
+  box-shadow: inset 1px 1px 0 #ffffff;
+  white-space: nowrap;
+}
+
+.table-text td{
+  padding: 6px 10px;
+  border-right: 1px solid #efede2;
+  border-bottom: 1px solid #e6e3d4;
+  vertical-align: top;
+  color: #222222;
+  cursor: default;
+}
+
+.history p{
+    font-size: 14px;
+}
+
+.history li{
+    font-size: 18px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history ul{
+    font-size: 18px;
+    list-style-type: none;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.text-about{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+.text-about ul{
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.img-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px){
+    .layout{
+        grid-template-columns: 1fr;
+    }   
+    .sidebar{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 10px;
+        align-items: start;
+    }   
+    .popular{
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
+    .popular article{
+        width: 46%;
+    }   
+    .main-text{
+        flex-wrap: wrap;
+    }   
+    .main-text article{
+        width: 100%;
+    }   
+    .video-embed{
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        margin: 10px 0;
+        background: #000;
+    }   
+
+    .video-embed iframe{
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
+
+@media (max-width: 640px){
+    body{
+        margin: 8px 4px;
+    }
+
+    .brand-copy h1{
+        font-size: 22px;
+        margin: 6px;
+    }
+
+    .brand-copy p{
+        font-size: 12px;
+        margin: 6px;
+    }
+
+    .main-nav ul{
+        flex-wrap: wrap;
+        gap: 6px;
+        margin: 6px;
+    }
+
+    .hero-title{
+        font-size: 20px;
+    }
+
+    .hero p{
+        font-size: 13px;
+    }
+
+    .popular-title{
+        font-size: 20px;
+        margin: 8px;
+    }
+
+    .popular article{
+        width: 100%;
+    }
+
+    .table-window{
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-text{
+        min-width: 520px;
+        font-size: 12px;
+    }
+
+    .table-text th{
+        white-space: normal;
+        padding: 4px 8px;
+    }
+
+    .table-text td{
+        padding: 4px 8px;
+    }
+
+    .text-about{
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .text-about ul{
+        padding-left: 18px;
+    }
+
+    .title-bar-text{
+        white-space: normal;
+    }
+
+    .subcribe-form input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .js .menu-toggle {display: inline-block;}
+    .js .main-nav {display: none; }
+    .js .main-nav.is-open {display: block;}
+}

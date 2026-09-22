@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Графика в Web</title>
+</head>
+<body>
+    <div class="window">
+        <header class="site-header window" id="top"></header>
+            <div class="title-bar">
+                <div class="title-bar-text">Графика в Web - Главная</div>
+                <div class="title-bar-controls" aria-hidden="true">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="brand-row">
+                <a href="index.html" class="brand" aria-label="Графика в Web - Главная">
+                    <span class="brand-copy">
+                        <h1>Графика в Web</h1>
+                        <p>История, технологии, примеры</p>
+                    </span>
+                </a>
+                <div class="header-actions">
+                    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Открыть меню">☰</button>
+                </div>
+            </div>
+            <nav class="main-nav" id="main-menu" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="history.html">История</a></li>
+                    <li><a href="list.html">Технологии</a></li>
+                    <li><a href="videos.html">Видеоуроки</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="layout">
+        <main class="content-window window">
+            <div class="title-bar">
+                <div class="title-bar-text">Добро пожаловать</div>
+            </div>
+            <div class="window-body">
+                <h3 class="popular-title">Растровая графика</h3>
+                <section class="main-text">
+                    <article class="text-about">
+                        <p>Растровая графика — способ представления изображения в виде сетки (растра) из мельчайших точек — пикселей. Каждому пикселю присваивается свой цвет, и вместе они складываются в картинку: фотографию, скриншот, рисунок. Так устроены все привычные форматы изображений: JPEG, PNG, GIF, WebP, AVIF.</p>
+                        <p>Главные характеристики растрового изображения — размер в пикселях (ширина × высота) и глубина цвета (сколько бит отводится на один пиксель). Чем больше пикселей и оттенков, тем качественнее и «тяжелее» файл.</p>
+                        <p><b>Плюсы:</b></p>
+                        <ul>
+                            <li>идеально подходит для фотографий и сложных изображений с плавными переходами цвета и полутонами;</li>
+                            <li>позволяет получить фотореалистичную картинку любой сложности;</li>
+                            <li>поддерживается всеми браузерами и устройствами без исключения.</li>
+                        </ul>
+                        <p><b>Минусы:</b></p>
+                        <ul>
+                            <li>при увеличении изображение теряет качество: пиксели становятся заметны, картинка «замыливается»;</li>
+                            <li>большой размер файла — фотография высокого разрешения может занимать десятки мегабайт;</li>
+                            <li>размер не зависит от содержимого: даже простая картинка в высоком разрешении весит много.</li>
+                        </ul>
+                        <p>В вебе растровая графика — основной формат для фотографий, обложек и любых изображений, полученных с камеры. При этом картинку нужно готовить под нужный размер заранее: невозможно «растянуть» маленькое изображение до большого без потери качества.</p>
+                    </article>
+                </section>
+                <div class="status-bar">
+                    <p class="status-bar-field">Статус сайта: Онлайн</p>
+                    <p class="status-bar-field">Посетителей сайта: 1</p>
+                </div>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <section class="sidebar-window window">
+                <div class="title-bar">
+                    <div class="title-bar-text">Разделы сайта</div>
+                </div>
+                <div class="window-body">
+                    <nav aria-label="Дополнительные страцницы">
+                        <ul class="page-links">
+                            <li><a href="history.html">1. История</a></li>
+                            <li><a href="list.html">2. Технологии</a></li>
+                            <li><a href="webp.html">3. WebP</a></li>
+                            <li><a href="svg.html">4. SVG</a></li>
+                            <li><a href="canvas.html">5. Canvas</a></li>
+                            <li><a href="vector.html">6. Векторная графика</a></li>
+                            <li><a href="raster.html">7. Растровая графика</a></li>
+                            <li><a href="videos.html">8. Видеоуроки</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <section class="sidebar-ad window">
+                <div class="title-bar">
+                    <div class="title-bar-text">Реклама</div>
+                </div>
+                <div class="window-body ad">
+                    <p>Здесь могла бы быть ваша реклама</p>
+                </div>
+            </section>
+            <section class="sidebar-news window">
+                <div class="title-bar">
+                    <div class="title-bar-text">Подписаться на рассылку</div>
+                </div>
+                <form action="#" class="subcribe-form" method="post">
+                    <label for="e-mail">Ваш e-mail:</label>
+                    <input type="e-mail" id="e-mail" name="e-mail" placeholder="emailexample@example.com" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </section>
+        </aside>
+    </div>
+    <footer class="site-footer window">
+        <div class="title-bar">
+            <div class="title-bar-text">Сведения о сайте</div>
+        </div>
+        <div class="window-body">
+            <p>© 2026 Графика в Web. Все права защищены.</p>
+            <p>Контактная информация: <a href="mailto:example-mail@example.com">example-mail@example.com</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
